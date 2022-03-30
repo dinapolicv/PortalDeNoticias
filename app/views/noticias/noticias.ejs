@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Notícia</h1>
+    <table>
+        <tr>
+            <td>ID</td>
+            <td>Titulo</td>
+            <td>Noticia</td>
+        </tr>
+        <!-- aqui ele usa um vetor para navegar pela tabela como um vetor -->
+        <% for (var i=0; i<noticia.length; i++) { %>
+            <!-- ja dentro do laço ele monta uma tabela com os dados de cada id -->
+            <tr>
+                <td>
+                    <%=noticias[i].id_noticias%>
+                </td>
+                <td>
+                    <%=noticias[i].titulo%>
+                </td>
+                <td>
+                    <%=noticias[i].noticia%>
+                </td>
+            </tr>
+            <% } %>
+    </table>
+</body>
+
+</html>
