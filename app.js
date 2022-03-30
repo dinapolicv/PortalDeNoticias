@@ -1,10 +1,5 @@
 const app = require('./config/server.js')
 
-//rota para a página principal do app
-app.get('/', function(req, res) {
-    res.render('home/index.ejs');
-});
-
 //rota para a página de notícia
 app.get('/noticia', function(req, res) {
     const mysql = require('mysql'); //importaçao do mysql
